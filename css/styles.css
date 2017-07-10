@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {margin: 0px; font-size: 14px; color: #333 ; font-family: Arial,Times New roman, Helvetica, sans-serif;}
+p, u1, h1, h2 {margin: 0px; padding: 0px;}
+
+a { text-decoration: none; color: #333;}
+a:hover {color: #C30; text-decoration:none}
+
+.clear{ clear:	both;}
+
+#wapper {
+	width: 100%;
+	display: block;
+	/*overflow: hidden;*/
+}
+.right-bg{
+	background:url(../images/right_image_background.png) no-repeat right 0 #fff;
+	}
+.left-bg{
+	background: url(../images/left_image_background.png) no-repeat 0 0;
+	}	
+.main {
+	max-width:980px;
+	margin:auto;
+	background-color:#fff;
+}
+.full_width {
+	width:100%;
+}
+.background{
+	background-color: #fff;
+}
+.logo {
+	height:50px;
+	padding:0;
+}
+.logo a{
+	padding:0;
+}
+.nopadding-bottom {
+	padding-bottom:0;
+	margin-bottom:0;
+}
+.newest {
+	width:100%;
+	padding:5px;
+	float:left;
+}
+.tin-moi{
+	padding-right:0;
+	font-size:15px;
+	font-weight:bold;
+	color:#C00;
+	text-decoration:underline;
+	float:left;
+}
+.rolling-text a{
+	color:#09C;
+	font-size:15px;
+}
+.banner-top {
+	float: left;
+	margin:5px;
+}
+.banner-top img{
+	width:100%;
+}
+
+.hot-floor {
+	width: 100%;
+	float:left;
+	border:1px solid #ccc;
+}
+/* hot container */
+.hot-container {
+	padding:10px;
+	float: left;
+	border-right: 1px solid #ccc;
+}
+.hot-img {
+	position:relative;
+}
+.hot-img img{
+	width:100%;
+}
+/* Caption text */
+.hot-text {
+	z-index:1;
+	background-color:rgba(153,153,153,0.75);
+	padding:10px 2px;
+	color: #FFF;
+	font-size:17px;
+	font-weight:bold;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom:0;
+	left:0;
+}
+.list-hot {
+	float:right;
+	padding:15px;
+}
+.list-hot ul{
+	padding-left:15px;
+}
+.list-hot li{
+	line-height:25px;
+	font-size:15px;
+	list-style:square;
+}
+
+.content {
+	width: 100%;
+	float:left;
+	border:1px solid #ccc;
+}
+.box-left {
+	padding: 7px;
+}
+.box-left ul{
+	float:left;
+	padding:0;
+}
+.box-left li{
+	list-style:none;
+}
+.floor {
+	margin-bottom:10px;
+	float:left;
+	width:100%;
+	border-bottom:1px solid  #ccc;
+}
+.photo {
+	padding-left:0;
+}
+.title h3{
+	margin-top:0;
+	color:#09C;
+}
+.title h3:hover {
+	color: #C30;
+	text-decoration:none;
+}
+
+.description h5{
+	line-height:18px;
+}
+.box-left .floor:last-child {
+	border-bottom: none;
+}
+.box-right {
+	float:right;
+	padding:0;
+}
+.banner-right {
+	text-align:center;
+	padding:7px;
+	width:100%;
+}
+.banner-right img {
+	max-width:315px;
+	width:100%;
+}
+.livescore {
+	width:100%;
+	padding:7px;
+	padding-bottom:0;
+}
+.list-news {
+	margin:7px;
+}
+.radius0 {
+	border-radius:0;
+}
+.panel-body li{
+	list-style:square;
+}
+
+.paddingleft25 {
+	padding-left:25px;
+}
+.bottom0 {
+	margin-bottom:0px;
+}
+.head-list-news {
+	color:#C00 !important;
+	font-weight:bold;
+	font-size: 19px;
+}
+
+.footer {
+	margin: 0;
+	margin-top:5px;
+	float:left;
+	padding:15px 0;
+	padding-right:5px;
+	width: 100%;
+	background-color:#09C;
+}
+.footer a{
+	margin:0 5px;
+	float:right;
+	font-size:16px;
+	color:#fff;
+}
+.footer a:hover {
+	text-decoration:none;
+	color: #000;
+}
+
+.contact {
+	width: 100%;
+	float:left;
+	padding-left:20px;
+}
+.cd-top{
+	position:fixed;
+	right:50px;
+	bottom:50px;
+	z-index:9;
+}
+/*#myList li{ display:none;
+}
+#loadMore {
+    color:green;
+    cursor:pointer;
+}
+#loadMore:hover {
+    color:black;
+}*/
+
+.navbar-toggle-button {display: none;}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+.banner-top {display:none;}
+.content {
+	 margin-top:7px;
+ }
+} 
+@media only screen and (max-width: 767px) {
+ .navbar-toggle-button {display: block;}
+ .banner-top {display:none;}
+ .content {
+	 margin-top:7px;	 
+ }
+.big-photo {
+	 width:100% !important;
+ }
+ .box-left .floor:last-child {
+	border-bottom: 1px solid #ccc;
+}
+.photo, .text {
+	padding:5px;
+}
+
+}
+
+@media only screen and (max-width:415px) {
+.banner-top {display:none;}
+.content {
+	 margin-top:7px;
+ }
+ .box-left .floor:last-child {
+	border-bottom: 1px solid #ccc;
+}
+.title h3{font-size:16px;}
+.description {display:none;}
+.tin-moi {display:none;}
+.hot-container {border:none;}
+.cd-top {display:none;}
+}
